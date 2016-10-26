@@ -98,9 +98,9 @@ NSInteger const kPointLabelHeight = 20;
     NSMutableArray *pointsCenterLocations = [[NSMutableArray alloc] init];
     
     NSDictionary *graphRange = [self workOutRangeFromArray:_graphData];
-    NSInteger range = [[graphRange objectForKey:@"range"] integerValue];
-    NSInteger lowest = [[graphRange objectForKey:@"lowest"] integerValue];
-    NSInteger highest = [[graphRange objectForKey:@"highest"] integerValue];
+    float range = [[graphRange objectForKey:@"range"] floatValue];
+    float lowest = [[graphRange objectForKey:@"lowest"] floatValue];
+    float highest = [[graphRange objectForKey:@"highest"] floatValue];
     
     // in case all numbers are zero or all the same value
     if (range == 0) {
