@@ -125,7 +125,7 @@ NSInteger const kPointLabelHeight = 20;
         float screenHeight = (self.frame.size.height - (offsets)) / (self.frame.size.height + offSetFromTop + offsetFromBottom);
         
         CGPoint point = CGPointMake(xCoord,
-                                    self.frame.size.height - (([[_graphData objectAtIndex:counter - 1] integerValue] * 
+                                    self.frame.size.height - (([[_graphData objectAtIndex:counter - 1] floatValue] * 
                                                                ((self.frame.size.height * screenHeight) / range)) - 
                                                               (lowest * ((self.frame.size.height * screenHeight) / range ))+
                                                               offsetFromBottom));
